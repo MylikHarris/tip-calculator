@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_toEndOf="@+id/txtTitle"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:textColor="@color/colorTextPrimary"
+        android:background="@color/colorTextViewBackground"
+        android:textStyle="bold"
+        android:textSize="@dimen/txtTitle"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center"
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/tip_calculator" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:textColor="@color/colorTextSecondary"
+        android:textColorHint="@color/colorTextSecondary"
+        android:maxLength="6"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/edtMeal"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center"
+        android:hint="@string/meal_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMeal"
+        android:layout_gravity="center_horizontal"
+        android:autofillHints="" />
+
+    <TextView
+        android:textStyle="italic"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/txtSelect"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center"
+        android:id="@+id/txtSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/select_tip_percentage" />
+
+    <TextView
+        android:textStyle="italic"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/txtPercentage"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center"
+        android:id="@+id/txtPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/_15" />
+
+    <SeekBar
+        android:progress="15"
+        android:max="50"
+        android:layout_margin="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_gravity="center_horizontal"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:textColor="@color/colorTextPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="@dimen/btnReset"
+        android:layout_margin="@dimen/margin"
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/reset" />
+
+    <TextView
+        android:textColor="@color/colorTextPrimary"
+        android:background="@color/colorTextViewBackground"
+        android:textSize="@dimen/txtResult"
+        android:layout_margin="@dimen/margin"
+        android:gravity="center"
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/total" />
+</LinearLayout>
